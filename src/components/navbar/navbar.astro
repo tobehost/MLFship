@@ -6,29 +6,29 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "自媒体",
+    title: "接单平台",
     path: "#",
     children: [
-      { title: "九鼎私域运营", path: "https://flowus.cn/mlfship/share/9bd097cb-3fe3-4bf2-a05e-cef80477d22a?code=5UAJJ5" },
-      { title: "T3司机日记", path: "https://channels.weixin.qq.com/login.html" },
+      { title: "九鼎私域运营", path: "/" },
+      { title: "米丰私域运营", path: "#" },
       { title: "Aloe芯片机", path: "#" },
       { title: "404", path: "/404" },
     ],
   },
   {
-    title: "随笔",
+    title: "长期招募",
     path: "/pricing",
   },
   {
-    title: "收藏",
+    title: "培训认证",
     path: "/about",
   },
   {
-    title: "AI实战",
+    title: "商务对接",
     path: "/blog",
   },
   {
-    title: "Contact",
+    title: "社区",
     path: "/contact",
   },
 ];
@@ -38,10 +38,9 @@ const menuitems = [
   <header class="flex flex-col lg:flex-row justify-between items-center my-5">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">大乘</span><span
-            class="text-slate-500">随缘</span
-          >
+        <a href="/" class="text-lg">
+          <span class="font-bold text-slate-800">运营师</span>
+          <span class="text-slate-500">的自我修炼</span>
         </a>
         <div class="block lg:hidden">
           <MenuIcon class="w-4 h-4 text-gray-800" />
@@ -79,15 +78,15 @@ const menuitems = [
           }
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="#" style="muted" block size="md">Log in</Link>
-          <Link href="#" size="md" block>Sign up</Link>
+          <Link href="#" style="muted" block size="md">登录</Link>
+          <Link href="#" size="md" block>注册</Link>
         </div>
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
+        <a href="#">登录</a>
+        <Link href="#" size="md">注册</Link>
       </div>
     </div>
   </header>
